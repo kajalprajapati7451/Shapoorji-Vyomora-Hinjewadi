@@ -44,7 +44,7 @@
 
 /* ---- Reset ---- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 body {
   font-family: var(--font-b);
   color: var(--text-d);
@@ -290,11 +290,11 @@ img { max-width: 100%; display: block; }
   box-shadow: var(--sh-md); border: 3px solid #fff;
   width: 150px; height: 120px; object-fit: cover;
 }
-.about-float-tl { top: -1.2rem; right: -1.2rem; }
-.about-float-br { bottom: -1.2rem; left: -1.2rem; z-index: 1; }
+.about-float-tl { top: -0.6rem; right: -0.6rem; }
+.about-float-br { bottom: -0.6rem; left: -0.6rem; z-index: 1; }
 
 .about-badge-pill {
-  position: absolute; bottom: 1.5rem; right: -1.5rem;
+  position: absolute; bottom: 1.5rem; right: 1.25rem;
   background: #fff; border-radius: var(--r-md); padding: .85rem 1.2rem;
   display: flex; align-items: center; gap: .65rem;
   box-shadow: var(--sh-md); border: 1px solid var(--lav-100); z-index: 2;
@@ -437,7 +437,7 @@ img { max-width: 100%; display: block; }
 .pc-footer {
   display: flex; align-items: center; justify-content: space-between;
   padding: .9rem 1.5rem; background: var(--lav-50); border-top: 1px solid var(--lav-100);
-  margin: 0 -1.5rem -1.4rem; gap: .75rem;
+  margin: 0; gap: .75rem;
 }
 .eoi-pill {
   font-size: .78rem; font-weight: 600; color: var(--lav-700);

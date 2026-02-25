@@ -48,7 +48,7 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 body {
   font-family: var(--font-b);
   color: var(--text-d);
-  background: var(--off-white);
+  background: var(--white);
   line-height: 1.7;
   overflow-x: hidden;
 }
@@ -58,14 +58,18 @@ img { max-width: 100%; display: block; }
    NAVBAR
    ============================================== */
 #mainNav {
-  background: rgba(255,255,255,.93);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--lav-100);
+  background: var(--lav-600);
+  color: #fff;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
   padding: .7rem 0;
   transition: var(--tr);
   z-index: 1050;
 }
+#mainNav .nav-link { color: rgba(255,255,255,.95) !important; }
+#mainNav .nav-link:hover, #mainNav .nav-link.active { color: #fff !important; background: rgba(255,255,255,0.07); }
+#mainNav .brand-main, #mainNav .brand-sub { color: #fff !important; }
+#mainNav .brand-icon-wrap { background: linear-gradient(135deg, rgba(255,255,255,0.18), rgba(255,255,255,0.12)); color: #fff; }
+#mainNav .btn-enquire { background: #fff; color: var(--lav-600) !important; }
 #mainNav.scrolled { box-shadow: var(--sh-md); padding: .45rem 0; }
 
 .navbar-brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; }
@@ -330,7 +334,7 @@ img { max-width: 100%; display: block; }
 /* ==============================================
    HIGHLIGHTS SECTION
    ============================================== */
-.highlights-section { background: var(--lav-50); }
+.highlights-section { background: var(--white); }
 
 .hl-card {
   background: #fff; border-radius: var(--r-lg); overflow: hidden;
